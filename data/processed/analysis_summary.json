@@ -1,0 +1,496 @@
+{
+  "generated_from": {
+    "primary_source": "SABR Lahman Baseball Database CSV release plus Baseball-Reference daily WAR",
+    "source_page": "https://sabr.org/lahman-database/",
+    "box_folder": "https://sabr.app.box.com/s/y1prhc795jk8zvmelfd3jq7tl389y6cd",
+    "bref_batting_war": "https://www.baseball-reference.com/data/war_daily_bat.txt",
+    "bref_pitching_war": "https://www.baseball-reference.com/data/war_daily_pitch.txt",
+    "teamID": "OAK",
+    "year_start": 1968,
+    "year_end": 2024,
+    "primary_metric": "Baseball-Reference bWAR, clamped to zero for visual weights"
+  },
+  "most_similar_seasons": [
+    {
+      "year_a": 1973,
+      "year_b": 1974,
+      "similarity": 0.5300644730665566
+    },
+    {
+      "year_a": 2002,
+      "year_b": 2003,
+      "similarity": 0.4745893201696944
+    },
+    {
+      "year_a": 1980,
+      "year_b": 1981,
+      "similarity": 0.47178894805856186
+    },
+    {
+      "year_a": 1973,
+      "year_b": 1975,
+      "similarity": 0.47035216924194
+    },
+    {
+      "year_a": 1974,
+      "year_b": 1975,
+      "similarity": 0.45503945362661624
+    },
+    {
+      "year_a": 1981,
+      "year_b": 1982,
+      "similarity": 0.43517941505283275
+    },
+    {
+      "year_a": 1972,
+      "year_b": 1974,
+      "similarity": 0.432608725814979
+    },
+    {
+      "year_a": 1980,
+      "year_b": 1982,
+      "similarity": 0.4099868481237068
+    },
+    {
+      "year_a": 1988,
+      "year_b": 1989,
+      "similarity": 0.40791880337084957
+    },
+    {
+      "year_a": 2005,
+      "year_b": 2006,
+      "similarity": 0.4069538931703428
+    },
+    {
+      "year_a": 1999,
+      "year_b": 2000,
+      "similarity": 0.4055368358267419
+    },
+    {
+      "year_a": 2000,
+      "year_b": 2001,
+      "similarity": 0.4015506133508998
+    }
+  ],
+  "biggest_adjacent_turnover": [
+    {
+      "year": 1976,
+      "next_year": 1977,
+      "similarity": 0.06709043135049289,
+      "turnover": 0.9329095686495071
+    },
+    {
+      "year": 2011,
+      "next_year": 2012,
+      "similarity": 0.1082417323580977,
+      "turnover": 0.8917582676419022
+    },
+    {
+      "year": 2022,
+      "next_year": 2023,
+      "similarity": 0.11551653736218864,
+      "turnover": 0.8844834626378113
+    },
+    {
+      "year": 1997,
+      "next_year": 1998,
+      "similarity": 0.14673793979757263,
+      "turnover": 0.8532620602024273
+    },
+    {
+      "year": 2015,
+      "next_year": 2016,
+      "similarity": 0.14794083786110346,
+      "turnover": 0.8520591621388965
+    },
+    {
+      "year": 1984,
+      "next_year": 1985,
+      "similarity": 0.1515561085229803,
+      "turnover": 0.8484438914770197
+    },
+    {
+      "year": 2014,
+      "next_year": 2015,
+      "similarity": 0.1583671746254466,
+      "turnover": 0.8416328253745534
+    },
+    {
+      "year": 1998,
+      "next_year": 1999,
+      "similarity": 0.1615661221835431,
+      "turnover": 0.8384338778164568
+    },
+    {
+      "year": 1977,
+      "next_year": 1978,
+      "similarity": 0.16267840850062848,
+      "turnover": 0.8373215914993715
+    },
+    {
+      "year": 2023,
+      "next_year": 2024,
+      "similarity": 0.17548276347850586,
+      "turnover": 0.8245172365214941
+    },
+    {
+      "year": 2016,
+      "next_year": 2017,
+      "similarity": 0.18030776374912746,
+      "turnover": 0.8196922362508725
+    },
+    {
+      "year": 2007,
+      "next_year": 2008,
+      "similarity": 0.18771921890566454,
+      "turnover": 0.8122807810943354
+    }
+  ],
+  "specific_checks": [
+    {
+      "pair": "Jason Giambi / Ray Durham",
+      "found": true,
+      "a_years": "1995-2009",
+      "b_years": "2002-2002",
+      "overlapped": false,
+      "overlap_years": [],
+      "overlap_seasons": 0,
+      "weighted_overlap": 0,
+      "details": []
+    },
+    {
+      "pair": "Jason Giambi / Mark McGwire",
+      "found": true,
+      "a_years": "1995-2009",
+      "b_years": "1986-1997",
+      "overlapped": true,
+      "overlap_years": [
+        1995,
+        1996,
+        1997
+      ],
+      "overlap_seasons": 3,
+      "weighted_overlap": 0.898,
+      "details": [
+        {
+          "yearID": 1995,
+          "a_score": 0.155,
+          "b_score": 1.0,
+          "a_bwar": 0.8,
+          "b_bwar": 5.5,
+          "a_core": 0.344,
+          "b_core": 0.715,
+          "a_pa": 210.0,
+          "b_pa": 422.0,
+          "a_ip": 0.0,
+          "b_ip": 0.0
+        },
+        {
+          "yearID": 1996,
+          "a_score": 0.169,
+          "b_score": 1.0,
+          "a_bwar": 1.1,
+          "b_bwar": 6.4,
+          "a_core": 0.917,
+          "b_core": 0.866,
+          "a_pa": 598.0,
+          "b_pa": 548.0,
+          "a_ip": 0.0,
+          "b_ip": 0.0
+        },
+        {
+          "yearID": 1997,
+          "a_score": 0.574,
+          "b_score": 1.0,
+          "a_bwar": 1.8,
+          "b_bwar": 3.1,
+          "a_core": 1.0,
+          "b_core": 0.753,
+          "a_pa": 588.0,
+          "b_pa": 433.0,
+          "a_ip": 0.0,
+          "b_ip": 0.0
+        }
+      ]
+    }
+  ],
+  "bridge_players_late_mcgwire_to_early_moneyball": [
+    {
+      "playerID": "giambja01",
+      "player_name": "Jason Giambi",
+      "late_mcgwire_window_score": 0.899,
+      "early_moneyball_window_score": 2.0,
+      "bridge_score": 0.899
+    },
+    {
+      "playerID": "grievbe01",
+      "player_name": "Ben Grieve",
+      "late_mcgwire_window_score": 0.045,
+      "early_moneyball_window_score": 0.303,
+      "bridge_score": 0.045
+    },
+    {
+      "playerID": "prietar01",
+      "player_name": "Ariel Prieto",
+      "late_mcgwire_window_score": 0.581,
+      "early_moneyball_window_score": 0.037,
+      "bridge_score": 0.037
+    },
+    {
+      "playerID": "bellhma01",
+      "player_name": "Mark Bellhorn",
+      "late_mcgwire_window_score": 0.145,
+      "early_moneyball_window_score": 0.0,
+      "bridge_score": 0.0
+    },
+    {
+      "playerID": "stairma01",
+      "player_name": "Matt Stairs",
+      "late_mcgwire_window_score": 0.696,
+      "early_moneyball_window_score": 0.0,
+      "bridge_score": 0.0
+    },
+    {
+      "playerID": "tejadmi01",
+      "player_name": "Miguel Tejada",
+      "late_mcgwire_window_score": 0.0,
+      "early_moneyball_window_score": 2.448,
+      "bridge_score": 0.0
+    },
+    {
+      "playerID": "mathetj01",
+      "player_name": "T. J. Mathews",
+      "late_mcgwire_window_score": 0.0,
+      "early_moneyball_window_score": 0.0,
+      "bridge_score": 0.0
+    }
+  ],
+  "same_cluster_no_overlap": [
+    {
+      "player_a": "Rick Monday",
+      "player_b": "Ken Holtzman",
+      "community_id": 3,
+      "common_teammate_score": 9.701,
+      "peak_years": "1970 / 1972"
+    },
+    {
+      "player_a": "Bill North",
+      "player_b": "Rick Monday",
+      "community_id": 3,
+      "common_teammate_score": 8.68,
+      "peak_years": "1973 / 1970"
+    },
+    {
+      "player_a": "Bob Welch",
+      "player_b": "Steve Ontiveros",
+      "community_id": 1,
+      "common_teammate_score": 7.722,
+      "peak_years": "1989 / 1994"
+    },
+    {
+      "player_a": "Dwayne Murphy",
+      "player_b": "Dave Henderson",
+      "community_id": 1,
+      "common_teammate_score": 7.669,
+      "peak_years": "1982 / 1991"
+    },
+    {
+      "player_a": "Bill North",
+      "player_b": "Blue Moon Odom",
+      "community_id": 3,
+      "common_teammate_score": 7.537,
+      "peak_years": "1973 / 1968"
+    },
+    {
+      "player_a": "Dwayne Murphy",
+      "player_b": "Bob Welch",
+      "community_id": 1,
+      "common_teammate_score": 7.272,
+      "peak_years": "1982 / 1989"
+    },
+    {
+      "player_a": "Barry Zito",
+      "player_b": "Jack Cust",
+      "community_id": 2,
+      "common_teammate_score": 7.113,
+      "peak_years": "2002 / 2007"
+    },
+    {
+      "player_a": "Dwayne Murphy",
+      "player_b": "Mike Moore",
+      "community_id": 1,
+      "common_teammate_score": 6.834,
+      "peak_years": "1982 / 1989"
+    },
+    {
+      "player_a": "Bill North",
+      "player_b": "Mike Epstein",
+      "community_id": 3,
+      "common_teammate_score": 6.793,
+      "peak_years": "1973 / 1972"
+    },
+    {
+      "player_a": "Tony Phillips",
+      "player_b": "Mike Bordick",
+      "community_id": 1,
+      "common_teammate_score": 6.793,
+      "peak_years": "1986 / 1992"
+    },
+    {
+      "player_a": "Dave Henderson",
+      "player_b": "Steve Ontiveros",
+      "community_id": 1,
+      "common_teammate_score": 6.722,
+      "peak_years": "1991 / 1994"
+    },
+    {
+      "player_a": "Tim Hudson",
+      "player_b": "Dan Haren",
+      "community_id": 2,
+      "common_teammate_score": 6.681,
+      "peak_years": "2003 / 2007"
+    }
+  ],
+  "technical_overlap_different_peak_eras": [
+    {
+      "player_a": "Eric Chavez",
+      "player_b": "Tony Phillips",
+      "shared_seasons": 1,
+      "weighted_core": 0.285,
+      "peak_year_gap": 18,
+      "peak_eras": "C04 / C03"
+    },
+    {
+      "player_a": "Ramon Hernandez",
+      "player_b": "Tony Phillips",
+      "shared_seasons": 1,
+      "weighted_core": 0.113,
+      "peak_year_gap": 17,
+      "peak_eras": "C04 / C03"
+    },
+    {
+      "player_a": "Tim Hudson",
+      "player_b": "Tony Phillips",
+      "shared_seasons": 1,
+      "weighted_core": 0.285,
+      "peak_year_gap": 17,
+      "peak_eras": "C04 / C03"
+    },
+    {
+      "player_a": "Tony Phillips",
+      "player_b": "Miguel Tejada",
+      "shared_seasons": 1,
+      "weighted_core": 0.285,
+      "peak_year_gap": 16,
+      "peak_eras": "C03 / C04"
+    },
+    {
+      "player_a": "Rick Honeycutt",
+      "player_b": "Mike Norris",
+      "shared_seasons": 1,
+      "weighted_core": 0.02,
+      "peak_year_gap": 15,
+      "peak_eras": "C03 / C02"
+    },
+    {
+      "player_a": "Rick Langford",
+      "player_b": "Steve Ontiveros",
+      "shared_seasons": 2,
+      "weighted_core": 0.187,
+      "peak_year_gap": 15,
+      "peak_eras": "C02 / C03"
+    },
+    {
+      "player_a": "Jason Giambi",
+      "player_b": "Tony Phillips",
+      "shared_seasons": 1,
+      "weighted_core": 0.285,
+      "peak_year_gap": 15,
+      "peak_eras": "C04 / C03"
+    },
+    {
+      "player_a": "Mike Norris",
+      "player_b": "Terry Steinbach",
+      "shared_seasons": 1,
+      "weighted_core": 0.02,
+      "peak_year_gap": 14,
+      "peak_eras": "C02 / C03"
+    },
+    {
+      "player_a": "Stan Javier",
+      "player_b": "Mike Norris",
+      "shared_seasons": 1,
+      "weighted_core": 0.02,
+      "peak_year_gap": 14,
+      "peak_eras": "C03 / C02"
+    },
+    {
+      "player_a": "Eric Chavez",
+      "player_b": "Rickey Henderson",
+      "shared_seasons": 1,
+      "weighted_core": 0.027,
+      "peak_year_gap": 14,
+      "peak_eras": "C04 / C03"
+    },
+    {
+      "player_a": "Paul Blackburn",
+      "player_b": "Rajai Davis",
+      "shared_seasons": 1,
+      "weighted_core": 0.115,
+      "peak_year_gap": 14,
+      "peak_eras": "C07 / C05"
+    },
+    {
+      "player_a": "Ben Grieve",
+      "player_b": "Tony Phillips",
+      "shared_seasons": 1,
+      "weighted_core": 0.19,
+      "peak_year_gap": 14,
+      "peak_eras": "C04 / C03"
+    }
+  ],
+  "candidate_eras": [
+    {
+      "era_id": "C01",
+      "min": 1968,
+      "max": 1977,
+      "label": "C01: 1968-1977"
+    },
+    {
+      "era_id": "C02",
+      "min": 1978,
+      "max": 1984,
+      "label": "C02: 1978-1984"
+    },
+    {
+      "era_id": "C03",
+      "min": 1985,
+      "max": 1998,
+      "label": "C03: 1985-1998"
+    },
+    {
+      "era_id": "C04",
+      "min": 1999,
+      "max": 2008,
+      "label": "C04: 1999-2008"
+    },
+    {
+      "era_id": "C05",
+      "min": 2009,
+      "max": 2011,
+      "label": "C05: 2009-2011"
+    },
+    {
+      "era_id": "C06",
+      "min": 2012,
+      "max": 2016,
+      "label": "C06: 2012-2016"
+    },
+    {
+      "era_id": "C07",
+      "min": 2017,
+      "max": 2024,
+      "label": "C07: 2017-2024"
+    }
+  ]
+}
