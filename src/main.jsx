@@ -23,6 +23,10 @@ const TIMELINE_SORTS = [
   ["lastName", "Last name"],
 ];
 
+function publicPath(path) {
+  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+}
+
 function formatScore(value, digits = 3) {
   return Number(value || 0).toFixed(digits);
 }
@@ -137,7 +141,7 @@ function sortPlayers(players, sortMode) {
 function useAppData() {
   const [state, setState] = useState({ status: "loading", data: null, error: null });
   useEffect(() => {
-    fetch(`/data/app_data.json?v=${Date.now()}`, { cache: "no-store" })
+    fetch(`${publicPath("data/app_data.json")}?v=${Date.now()}`, { cache: "no-store" })
       .then((response) => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return response.json();
@@ -215,11 +219,11 @@ function Controls({ data, topN, setTopN, era, setEra, query, setQuery }) {
         />
       </label>
       <div className="download-links">
-        <a href="/exports/player_timeline_top60.svg">Timeline SVG</a>
-        <a href="/exports/player_timeline_career_top60.svg">Career SVG</a>
-        <a href="/exports/season_similarity_heatmap.svg">Heatmap SVG</a>
-        <a href="/exports/player_overlap_network.svg">Network SVG</a>
-        <a href="/exports/era_ribbon_top12.svg">Ribbon SVG</a>
+        <a href={publicPath("exports/player_timeline_top60.svg")}>Timeline SVG</a>
+        <a href={publicPath("exports/player_timeline_career_top60.svg")}>Career SVG</a>
+        <a href={publicPath("exports/season_similarity_heatmap.svg")}>Heatmap SVG</a>
+        <a href={publicPath("exports/player_overlap_network.svg")}>Network SVG</a>
+        <a href={publicPath("exports/era_ribbon_top12.svg")}>Ribbon SVG</a>
       </div>
     </section>
   );
