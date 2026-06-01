@@ -13,8 +13,6 @@ const TABS = [
   ["timeline", "Player Timeline"],
   ["heatmap", "Season Similarity"],
   ["network", "Overlap Network"],
-  ["ribbon", "Era Ribbon"],
-  ["analysis", "Analysis Checks"],
 ];
 
 const TIMELINE_SORTS = [
@@ -782,10 +780,10 @@ function App() {
     window.location.hash = id;
     setActiveState(id);
   };
-  const [topN, setTopN] = useState(80);
+  const [topN, setTopN] = useState(180);
   const [era, setEra] = useState("all");
   const [query, setQuery] = useState("");
-  const [timelineSort, setTimelineSort] = useState("total");
+  const [timelineSort, setTimelineSort] = useState("firstYear");
   const [showCareer, setShowCareer] = useState(false);
 
   useEffect(() => {
@@ -829,8 +827,6 @@ function App() {
       )}
       {active === "heatmap" && <SimilarityHeatmap data={data} />}
       {active === "network" && <OverlapNetwork data={data} query={query} />}
-      {active === "ribbon" && <EraRibbon data={data} />}
-      {active === "analysis" && <AnalysisChecks data={data} />}
     </main>
   );
 }
